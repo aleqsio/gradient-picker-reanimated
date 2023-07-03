@@ -13,6 +13,8 @@ PODS:
     - ExpoModulesCore
   - ExpoBlur (12.2.2):
     - ExpoModulesCore
+  - ExpoHaptics (12.2.1):
+    - ExpoModulesCore
   - ExpoHead (0.0.4):
     - ExpoModulesCore
   - ExpoImage (1.2.3):
@@ -457,6 +459,7 @@ DEPENDENCIES:
   - EXFont (from `../node_modules/expo-font/ios`)
   - Expo (from `../node_modules/expo`)
   - ExpoBlur (from `../node_modules/expo-blur/ios`)
+  - ExpoHaptics (from `../node_modules/expo-haptics/ios`)
   - ExpoHead (from `../node_modules/expo-head/ios`)
   - ExpoImage (from `../node_modules/expo-image/ios`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
@@ -531,6 +534,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo"
   ExpoBlur:
     :path: "../node_modules/expo-blur/ios"
+  ExpoHaptics:
+    :path: "../node_modules/expo-haptics/ios"
   ExpoHead:
     :path: "../node_modules/expo-head/ios"
   ExpoImage:
@@ -623,6 +628,7 @@ SPEC CHECKSUMS:
   EXFont: 6ea3800df746be7233208d80fe379b8ed74f4272
   Expo: 8448e3a2aa1b295f029c81551e1ab6d986517fdb
   ExpoBlur: fac3c6318fdf409dd5740afd3313b2bd52a35bac
+  ExpoHaptics: 5156bc5160d8e04c170dd6e645a71154951a2ad9
   ExpoHead: 0d2715e762511726a7667ebaf27bcda7731c63e7
   ExpoImage: 60f8d8182e8e13b5f5c2bb6bc860c933b2fe6c25
   ExpoKeepAwake: 69f5f627670d62318410392d03e0b5db0f85759a

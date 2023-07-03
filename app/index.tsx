@@ -67,7 +67,7 @@ export default function Home() {
           ),
         },
         {
-          rotateZ:
+          rotateY:
             Math.round(
               withRepeat(
                 withSequence(
@@ -120,12 +120,6 @@ export default function Home() {
           gradientIdx={gradientIdx}
           setGradientIdx={setGradientIdx}
         />
-        {/* <Button
-          title="Change Gradient"
-          onPress={() => {
-            setIndex((i) => (i < gradients.length - 1 ? i + 1 : 0));
-          }}
-        /> */}
       </SafeAreaView>
     </View>
   );

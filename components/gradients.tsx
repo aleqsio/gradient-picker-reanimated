@@ -32,4 +32,28 @@ export const gradients: GradientType[] = [
     name: "Tidal",
     image: require("../assets/gradients/07.Tidal.png"),
   },
+  {
+    name: "VioletBlue",
+    image: require("../assets/gradients/08.VioletBlue.png"),
+  },
+  {
+    name: "LightSkyBlue",
+    image: require("../assets/gradients/09.LightSkyBlue.png"),
+  },
+  {
+    name: "Mindaro",
+    image: require("../assets/gradients/10.Mindaro.png"),
+  },
+  {
+    name: "PaleVioletRed",
+    image: require("../assets/gradients/13.PaleVioletRed.png"),
+  },
+  {
+    name: "DarkSalmon",
+    image: require("../assets/gradients/17.DarkSalmon.png"),
+  },
+  {
+    name: "Flare",
+    image: require("../assets/gradients/97.Flare.png"),
+  },
 ];

@@ -13,6 +13,7 @@
     "expo": "~48.0.18",
     "expo-blur": "~12.2.2",
     "expo-constants": "~14.2.1",
+    "expo-haptics": "~12.2.1",
     "expo-image": "^1.2.3",
     "expo-linking": "~4.0.1",
     "expo-router": "^1.7.3",
