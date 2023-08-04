@@ -21,9 +21,7 @@ import { gradients } from "../components/gradients";
 
 const { width, height } = Dimensions.get("screen");
 
-export default function Home() {
-  const [gradientIdx, setGradientIdx] = useState(0);
-
+export function Background({ gradientIdx }: { gradientIdx: number }) {
   const offset = useSharedValue({ x: 0, y: 0 });
   const imageStyles = useAnimatedStyle(() => {
     return {
@@ -90,31 +88,39 @@ export default function Home() {
     };
   });
   return (
+    <Animated.View
+      style={[
+        {
+          width: height,
+          height,
+          position: "absolute",
+          left: (width - height) / 2,
+          right: 0,
+        },
+        imageStyles,
+      ]}
+    >
+      <Image
+        style={{ flex: 1 }}
+        source={gradients[gradientIdx].image}
+        onLoad={() => {
+          offset.value = {
+            x: Math.random() * 200 - 100,
+            y: Math.random() * 100 - 50,
+          };
+        }}
+        transition={{ duration: 500, effect: "cross-dissolve" }}
+      />
+    </Animated.View>
+  );
+}
+
+export default function Home() {
+  const [gradientIdx, setGradientIdx] = useState(0);
+
+  return (
     <View className="flex-1">
-      <Animated.View
-        style={[
-          {
-            width: height,
-            height,
-            position: "absolute",
-            left: (width - height) / 2,
-            right: 0,
-          },
-          imageStyles,
-        ]}
-      >
-        <Image
-          style={{ flex: 1 }}
-          source={gradients[gradientIdx].image}
-          onLoad={() => {
-            offset.value = {
-              x: Math.random() * 200 - 100,
-              y: Math.random() * 100 - 50,
-            };
-          }}
-          transition={{ duration: 500, effect: "cross-dissolve" }}
-        />
-      </Animated.View>
+      <Background gradientIdx={gradientIdx} />
       <SafeAreaView className="flex-1 justify-center items-stretch">
         <GradientPicker
           gradientIdx={gradientIdx}

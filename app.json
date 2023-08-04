@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-rea3-nativewind-ts-template",
-    "slug": "expo-rea3-nativewind-ts-template",
+    "name": "reanimated-picker",
+    "slug": "picker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,12 +12,10 @@
       "backgroundColor": "#ffffff"
     },
     "scheme": "myapp",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.aleqsio.expo-rea3-nativewind-ts-template"
+      "bundleIdentifier": "com.aleqsio.reanimated-picker"
     },
     "android": {
       "adaptiveIcon": {
